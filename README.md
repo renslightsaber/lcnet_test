@@ -59,22 +59,23 @@ scheduler = GradualWarmupScheduler(
 )
 ```
 
-## 📊 Performance Comparison
+## 📊 Performance Comparison (LCNet vs Improved)
 
-| Dataset | Method            | Loss   | IoU   | Dice  | Precision | Recall  |
-|---------|-------------------|--------|-------|-------|-----------|---------|
-| **CVPPP** | 🔷 **LCNet (original)** | 0.6579 | 0.4055 | 0.5255 | 0.4487    | 0.6873  |
-|         | 🟧 **LCNet-Improved**     | 0.5037 | 0.4022 | 0.4997 | 0.4899    | 0.5673  |
-| **CFD**   | 🔷 LCNet               | 0.4021 | 0.8446 | 0.9124 | 0.8491    | 0.9939  |
-|         | 🟧 Improved            | 0.2931 | 0.8469 | 0.9138 | 0.8515    | 0.9940  |
-| **CarDD** | 🔷 LCNet               | 0.7537 | 0.0911 | 0.1648 | 0.1001    | 0.6003  |
-|         | 🟧 Improved            | 0.5746 | 0.2046 | 0.3368 | 0.2296    | 0.7251  |
-| **ETIS**  | 🟧 Improved Only       | —      | 0.3917 | 0.5150 | 0.5621    | 0.5751  |
+| Dataset | Method           | Loss    | IoU    | Dice   | Precision | Recall  |
+|---------|------------------|---------|--------|--------|-----------|---------|
+| **ETIS**   | 🔷 LCNet (original) | 0.6579 | 0.4055 | 0.5255 | 0.4487    | 0.6873  |
+|           | 🟧 Improved         | 0.5037 | 0.4022 | 0.4997 | 0.4899    | 0.5673  |
+| **CVPPP**  | 🔷 LCNet (original) | 0.4021 | 0.8446 | 0.9124 | 0.8491    | 0.9939  |
+|           | 🟧 Improved         | 0.2931 | 0.8469 | 0.9138 | 0.8515    | 0.9940  |
+| **CFD**    | 🔷 LCNet (original) | 0.7537 | 0.0911 | 0.1648 | 0.1001    | 0.6003  |
+|           | 🟧 Improved         | 0.5746 | 0.2046 | 0.3368 | 0.2296    | 0.7251  |
+| **CarDD**  | 🔷 LCNet (original) | 0.5736 | 0.3521 | 0.4765 | 0.5504    | 0.5357  |
+|           | 🟧 Improved         | 0.4328 | 0.3917 | 0.5150 | 0.5621    | 0.5751  |
 
 ---
 
-🔷 : Original LCNet  
-🟧 : LCNet with **SEBlock + dilation update**
+🔷 **LCNet (original)** : Original architecture  
+🟧 **Improved** : LCNet with SEBlock + Updated Dilation Strategy
 
 
 
