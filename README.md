@@ -1,4 +1,5 @@
 # 🔬 LCNet-Improved for Binary Segmentation
+: This repo is based on the model proposed in [Lightweight Context-Aware Network Using Partial-Channel Transformation for Real-Time Semantic Segmentation](https://ieeexplore.ieee.org/document/10411824), and tried some modifications for better performance for various domain datasets. 
 
 > **Competition Training Repo**  
 
