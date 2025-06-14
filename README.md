@@ -40,6 +40,16 @@ The SEBlock performs global average pooling followed by squeeze-and-excitation w
 ## ⚙️ Training Settings
 Batch Size is fixed as 16 and also number of epochs is fixed as 30.
 
+### 🛠️ Environment
+
+- OS: Ubuntu 20.04    
+- Python: 3.10    
+- PyTorch: 2.x    
+- CUDA: 11.x     
+- GPU: NVIDIA RTX A6000    
+
+> All training and evaluation were performed on a single NVIDIA RTX A6000 GPU.
+
 ### 🧪 Loss Function
 
 ```python
