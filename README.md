@@ -44,9 +44,9 @@ Batch Size is fixed as 16 and also number of epochs is fixed as 30.
 
 - OS: Ubuntu 20.04    
 - Python: 3.10    
-- PyTorch: 2.x    
-- CUDA: 11.x     
-- GPU: NVIDIA RTX A6000    
+- torch: 2.6.0    
+- torchvision: 0.21.0     
+- GPU: NVIDIA RTX A6000 (x1)    
 
 > All training and evaluation were performed on a single NVIDIA RTX A6000 GPU.
 
