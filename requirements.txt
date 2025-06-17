@@ -12,3 +12,6 @@ pillow>=9.0.0
 numpy>=1.21
 natsort==8.4.0
 warmup_scheduler==0.3
+jupyter
+ipykernel
+ipywidgets
