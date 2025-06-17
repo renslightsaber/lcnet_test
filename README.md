@@ -40,7 +40,32 @@ The SEBlock performs global average pooling followed by squeeze-and-excitation w
 ## ⚙️ Training Settings
 Batch Size is fixed as 16 and also number of epochs is fixed as 30.
 
+
 ### 🛠️ Environment
+
+Create conda env with Python 3.10.     
+```python
+conda create -n caufinal python==3.10
+```
+
+Activate conda-env
+```python
+conda activate caufinal
+```
+
+Install Requirements
+```python
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 
+```
+or 
+```python
+pip install -r requirements.txt
+```
+
+Connect this to Jupyter Lab. 
+```python
+python -m ipykernel install --user --name caufinal --display-name caufinal
+```
 
 - OS: Ubuntu 20.04    
 - Python: 3.10    
