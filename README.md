@@ -13,7 +13,7 @@ This repository contains an **improved implementation of LCNet** designed for bi
 
 To start training, simply run:
 
-```python
+```shell
 📁 competition_main_lcnet_improved.ipynb
 ```
 ## 🔧 Key Modifications
@@ -22,7 +22,7 @@ To start training, simply run:
 
 - The `dilation_block_2` configuration was modified for better multi-scale receptive field capture:
 
-```python
+```shell
 dilation_block_2 = [2, 4, 8, 16, 20, 24, 32]
 ```
 
@@ -44,26 +44,26 @@ Batch Size is fixed as 16 and also number of epochs is fixed as 30.
 ### 🛠️ Environment
 
 Create conda env with Python 3.10.     
-```python
+```shell
 conda create -n caufinal python==3.10
 ```
 
 Activate conda-env
-```python
+```shell
 conda activate caufinal
 ```
 
 Install Requirements
-```python
+```shell
 pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124 
 ```
 or 
-```python
+```shell
 pip install -r requirements.txt
 ```
 
 Connect this to Jupyter Lab. 
-```python
+```shell
 python -m ipykernel install --user --name caufinal --display-name caufinal
 ```
 
@@ -77,7 +77,7 @@ python -m ipykernel install --user --name caufinal --display-name caufinal
 
 ### 🧪 Loss Function
 
-```python
+```shell
 TotalLoss = α * BCE + β * Dice + γ * Focal
 (α=0.3, β=0.4, γ=0.3, focal_gamma=2.0)
 ```
